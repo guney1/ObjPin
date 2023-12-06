@@ -1,0 +1,6 @@
+path: /mnt/c/Users/user/Desktop/python_projects/object_pin_service/train_folder
+train: images/train
+val: images/test
+
+names:
+  0: beer
