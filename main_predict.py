@@ -27,7 +27,7 @@ def main():
 
     pred_dict = detector.predict_transform(
         url_json_path = args.url_json_path,
-        return_boxes = True
+        return_boxes = False
     )
 
     return pred_dict

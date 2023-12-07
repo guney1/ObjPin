@@ -32,6 +32,10 @@ def main():
     parser.add_argument('-tcp', '--train_config_path', type=str,
                         default=None,
                         help='Path to training config')
+    
+    parser.add_argument('-ep', '--n_epochs', type=int,
+                        default=500,
+                        help='Number of the epochs')
                         
 
     args = parser.parse_args()
@@ -50,7 +54,7 @@ def main():
 
     detector.fit_transform(
         train_config_path=args.train_config_path, 
-        epochs=5
+        epochs=args.n_epochs
     )
 
 
